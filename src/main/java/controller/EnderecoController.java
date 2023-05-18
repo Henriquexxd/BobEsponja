@@ -4,9 +4,7 @@ import java.util.List;
 
 import model.bo.EnderecoBO;
 import model.exception.CampoInvalidoException;
-import model.exception.EnderecoInvalidoException;
 import model.vo.telefonia.Endereco;
-import model.vo.telefonia.Telefone;
 
 public class EnderecoController {
 
@@ -50,9 +48,9 @@ public class EnderecoController {
 		return bo.atualizar(enderecoAlterado);
 	}
 	
-	public boolean excluir(int id) throws EnderecoInvalidoException {
-		return bo.excluir(id);
-	}
+//	public boolean excluir(int id) throws EnderecoInvalidoException {
+//		return bo.excluir(id);
+//	}
 	
 	public Endereco consultarPorCep(String cep) {
 		return bo.consultarPorCep(cep);

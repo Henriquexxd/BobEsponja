@@ -1,27 +1,27 @@
 package view.telefonia;
 
+import java.awt.Color;
+import java.awt.Component;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.ParseException;
 
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
-import com.jgoodies.forms.layout.FormLayout;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.text.MaskFormatter;
+
 import com.jgoodies.forms.layout.ColumnSpec;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.forms.layout.FormSpecs;
 import com.jgoodies.forms.layout.RowSpec;
 
 import controller.EnderecoController;
 import model.vo.telefonia.Endereco;
-
-import com.jgoodies.forms.layout.FormSpecs;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.text.MaskFormatter;
-import javax.swing.JFormattedTextField;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class CadastroEndereco {
 

@@ -8,6 +8,7 @@ import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
 import com.jgoodies.forms.layout.RowSpec;
 
+import controller.EnderecoController;
 import model.vo.telefonia.Endereco;
 
 import com.jgoodies.forms.layout.FormSpecs;
@@ -162,6 +163,9 @@ public class CadastroEndereco {
 				endereco.setCidade(textFieldMunicipio.getText());
 				endereco.setEstado(textFieldEstado.getText());
 				endereco.setBairro(textFieldBairro.getText());
+				
+				EnderecoController controller = new EnderecoController();
+				
 								
 			}
 		});

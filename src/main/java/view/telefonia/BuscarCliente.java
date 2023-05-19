@@ -23,7 +23,7 @@ public class BuscarCliente extends JFrame {
 	private JTable table;
 	private JButton btnBuscarTodos;
 	private ArrayList<Endereco> enderecos;
-	private String[] nomesColunas = {"#", "NOME", "CPF", "ENDERECO", "TotalTelefones"};
+	private String[] nomeColunas = {"#", "NOME", "CPF", "ENDERECO", "TotalTelefones"};
 
 	/**
 	 * Launch the application.
@@ -32,7 +32,7 @@ public class BuscarCliente extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					BuscarEndereco frame = new BuscarEndereco();
+					BuscarCliente frame = new BuscarCliente();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

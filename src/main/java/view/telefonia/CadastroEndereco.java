@@ -102,9 +102,6 @@ public class CadastroEndereco {
 				FormSpecs.DEFAULT_ROWSPEC,
 				FormSpecs.RELATED_GAP_ROWSPEC,
 				FormSpecs.DEFAULT_ROWSPEC,}));
-		
-		lblCep = new JLabel("Cep:");
-		frmCadastroDeEndereo.getContentPane().add(lblCep, "4, 4");
 		try {
 			//definicao da mascara
 			mascaraCep = new MaskFormatter("####-####");
@@ -114,39 +111,42 @@ public class CadastroEndereco {
 			JOptionPane.showMessageDialog(null,"Erro ao criar Máscara de Cep");
 		}
 		
+		lblCep = new JLabel("Cep:");
+		frmCadastroDeEndereo.getContentPane().add(lblCep, "2, 4, 3, 1");
+		
 		formattedTextFieldCep = new JFormattedTextField(mascaraCep);
 		frmCadastroDeEndereo.getContentPane().add(formattedTextFieldCep, "6, 4, fill, default");
 		
 		lblRua = new JLabel("Rua:");
-		frmCadastroDeEndereo.getContentPane().add(lblRua, "4, 6");
+		frmCadastroDeEndereo.getContentPane().add(lblRua, "2, 6, 3, 1");
 		
 		textFieldRua = new JTextField();
 		frmCadastroDeEndereo.getContentPane().add(textFieldRua, "6, 6, fill, default");
 		textFieldRua.setColumns(10);
 		
 		lblNumero = new JLabel("Número:");
-		frmCadastroDeEndereo.getContentPane().add(lblNumero, "4, 8, left, default");
+		frmCadastroDeEndereo.getContentPane().add(lblNumero, "2, 8, 3, 1, left, default");
 		
 		textFieldNumero = new JTextField();
 		frmCadastroDeEndereo.getContentPane().add(textFieldNumero, "6, 8, fill, default");
 		textFieldNumero.setColumns(10);
 		
 		lblBairro = new JLabel("Bairro:");
-		frmCadastroDeEndereo.getContentPane().add(lblBairro, "4, 10, left, default");
+		frmCadastroDeEndereo.getContentPane().add(lblBairro, "2, 10, 3, 1, left, default");
 		
 		textFieldBairro = new JTextField();
 		frmCadastroDeEndereo.getContentPane().add(textFieldBairro, "6, 10, fill, default");
 		textFieldBairro.setColumns(10);
 		
 		lblMunicpio = new JLabel("Município");
-		frmCadastroDeEndereo.getContentPane().add(lblMunicpio, "4, 12, left, default");
+		frmCadastroDeEndereo.getContentPane().add(lblMunicpio, "2, 12, 3, 1, left, default");
 		
 		textFieldMunicipio = new JTextField();
 		frmCadastroDeEndereo.getContentPane().add(textFieldMunicipio, "6, 12, fill, default");
 		textFieldMunicipio.setColumns(10);
 		
 		lblEstado = new JLabel("Estado:");
-		frmCadastroDeEndereo.getContentPane().add(lblEstado, "4, 14, left, default");
+		frmCadastroDeEndereo.getContentPane().add(lblEstado, "2, 14, 3, 1, left, default");
 		
 		textFieldEstado = new JTextField();
 		frmCadastroDeEndereo.getContentPane().add(textFieldEstado, "6, 14, fill, default");
@@ -169,7 +169,7 @@ public class CadastroEndereco {
 								
 			}
 		});
-		frmCadastroDeEndereo.getContentPane().add(btnSalvar, "2, 18, 5, 1");
+		frmCadastroDeEndereo.getContentPane().add(btnSalvar, "1, 18, 6, 1");
 	}
 
 }

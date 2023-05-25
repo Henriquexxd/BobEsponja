@@ -1,10 +1,12 @@
-package ExemploTela;
+package view.exemplo;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -14,8 +16,8 @@ import java.awt.event.ActionEvent;
 public class TelaPrincipal extends JFrame {
 
 	private JPanel contentPane;
-	private CadastroCliente painelCadastroCliente;
-	private ListagemCliente painelListagemCliente;
+	private PainelCadastroCliente painelCadastroCliente;
+	
 	/**
 	 * Launch the application.
 	 */
@@ -50,7 +52,8 @@ public class TelaPrincipal extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				painelCadastroCliente = new PainelCadastroCliente();
-				
+				setContentPane(painelCadastroCliente);
+				revalidate();
 				
 			}
 		});
@@ -61,7 +64,9 @@ public class TelaPrincipal extends JFrame {
 		mntmListagemCliente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				painelListagemCliente = new PainelListagemCliente();
+				PainelListagemCliente painelListagemCliente = new PainelListagemCliente();
+				setContentPane(painelListagemCliente);
+				revalidate();
 			}
 		});
 		mnCliente.add(mntmListagemCliente);

@@ -8,11 +8,13 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TelaPrincipal extends JFrame {
 
 	private JPanel contentPane;
-
+	private PainelCadastroCliente painelCadastroCliente;
 	/**
 	 * Launch the application.
 	 */
@@ -43,9 +45,24 @@ public class TelaPrincipal extends JFrame {
 		menuBar.add(mnCliente);
 		
 		JMenuItem mntmCadastrarCliente = new JMenuItem("Cadastrar Cliente");
+		mntmCadastrarCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				painelCadastroCliente = new PainelCadastroCliente();
+				
+				
+			}
+		});
+		
 		mnCliente.add(mntmCadastrarCliente);
 		
 		JMenuItem mntmListagemCliente = new JMenuItem("Listagem Cliente");
+		mntmListagemCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				painelListagemCliente = new PainelListagemCliente();
+			}
+		});
 		mnCliente.add(mntmListagemCliente);
 		
 		JMenu mnEndereco = new JMenu("Menu Endereço");

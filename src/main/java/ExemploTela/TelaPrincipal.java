@@ -14,7 +14,8 @@ import java.awt.event.ActionEvent;
 public class TelaPrincipal extends JFrame {
 
 	private JPanel contentPane;
-	private PainelCadastroCliente painelCadastroCliente;
+	private CadastroCliente painelCadastroCliente;
+	private ListagemCliente painelListagemCliente;
 	/**
 	 * Launch the application.
 	 */
